@@ -10,9 +10,19 @@ const productos = [{
     "precio" : 1200
 }];
 
+const usuarios = [{
+    "id" : 1,
+    "nombre" : "Juan",
+    "email" : "juan@email.com"
+}];
+
 
 app.get('/api/productos', (req, res) => {
      return res.json(productos);
+});
+
+app.get('/api/usuarios', (req, res) => {
+     return res.json(usuarios);
 });
 
 app.listen(PORT, () =>{
