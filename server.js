@@ -26,5 +26,5 @@ app.get('/api/usuarios', (req, res) => {
 });
 
 app.listen(PORT, () =>{
-console.log("Servidor Escuchando...")
+console.log(`Servidor Escuchando... en el puerto: ${PORT}`);
 });
